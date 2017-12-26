@@ -1,0 +1,10 @@
+<!-- <p>persona works!</p> -->
+
+<ul>
+  <li *ngFor="let persona of personas">
+    {{persona.nombre}}&nbsp;{{persona.apellidoPaterno}}&nbsp;{{persona.apellidoMaterno}}
+
+    <!-- <a (click)="irEditar(persona.id)">Editar</a> -->
+    <a routerLink="/persona/editar/{{persona.id}}">Editar 2</a>
+  </li>
+</ul>

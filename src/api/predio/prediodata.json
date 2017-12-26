@@ -1,0 +1,20 @@
+{ 
+    "data": [
+        // {
+        //     "idPredio": 1,
+        //     "descripcion": "Departamento",
+        //     "estado": 1
+        // },
+        // {
+        //     "idPredio": 2,
+        //     "descripcion": "Cochera",
+        //     "estado": 1
+        // },
+        {
+            "idPredio": 3,
+            "descripcion": "Depósito",
+            "estado": 1
+        }
+    ],
+    "total": 3
+}

@@ -1,0 +1,13 @@
+{ 
+    "data": 
+    {
+        "tipopersona": [
+            { "idTipoPersona": 1, "descripcion": "Propietario", "estado": 1},
+            { "idTipoPersona": 2, "descripcion": "Inquilino", "estado": 1}
+        ],
+        "tipogasto": [
+            { "idTipoGasto": 1, "descripcion": "Ingreso", "estado": 1},
+            { "idTipoGasto": 2, "descripcion": "Egreso", "estado": 1}
+        ]
+    }
+}

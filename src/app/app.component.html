@@ -1,0 +1,65 @@
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }} app
+  </h1>
+</div>
+<nav>
+  <a routerLink="/predio">Predio</a>
+  <a routerLink="/persona">Persona</a>
+</nav>
+<router-outlet></router-outlet> -->
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- <a class="navbar-brand">
+        <img src="assets/img/ngx-bootstrap.svg" class="logo">
+      </a> -->
+      <span class="navbar-brand">Welcome to {{ title }} app</span>
+    </div>
+    <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">
+          Link <span class="sr-only">(current)</span>
+        </a></li> -->
+        <!-- <li>
+          <a href="#">Link</a>
+        </li> -->
+        <!-- <li class="dropdown" dropdown> 
+            <a dropdownToggle role="button"> 
+              Dropdown <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu"> 
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li> -->
+        <li class="active"><a routerLink="/inicio">Inicio</a></li>
+        <li><a routerLink="/predio">Predio</a></li>
+        <!-- <li><a routerLink="/persona">Persona</a></li> -->
+        <li dropdown>
+            <a dropdownToggle class="dropdown-togle" role="button" routerLink="/persona">
+              Persona 
+              <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu">
+                <li *ngFor="let tipoPersona of listaTipoPersona">
+                    <a href="#">{{tipoPersona.descripcion}}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- <ul>
+  <li *ngFor="let tipoPersona of listaTipoPersona">
+    {{tipoPersona.descripcion}}
+  </li>
+</ul> -->
+
+<router-outlet></router-outlet>
